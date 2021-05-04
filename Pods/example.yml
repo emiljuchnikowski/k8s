@@ -1,0 +1,8 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: smartsoft-site
+spec:
+  containers:
+  - name: smartsoft-site
+    image: smartsoft001/site
