@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: smart-replicaset
+  labels:
+    app: smart
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      environment: production
+  template:
+    metadata:
+      labels:
+        environment: production
+    spec:
+      containers:
+      - name: smart-container
+        image: smartsoft001/site
