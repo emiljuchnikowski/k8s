@@ -1,0 +1,7 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: externalname-smartsoft-site
+spec:
+  type: ExternalName
+  externalName: my.example.com
