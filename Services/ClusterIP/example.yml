@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: smartsoft-site
+spec:
+  selector:
+    app: smart
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 80
+  clusterIP: 10.96.0.70
